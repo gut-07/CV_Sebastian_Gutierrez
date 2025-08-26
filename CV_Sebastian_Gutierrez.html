@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Sebastián Gutiérrez Garay - Hoja de Vida</title>
+    <link href="https://github.com/gut-07/CV_Sebastian_Gutierrez/blob/main/profilepic.jpeg?raw=true" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header-bg {
+            background-color: #2d3748;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #4fd1c5;
+            transition: box-shadow 0.5s ease;
+        }
+        .header-bg:hover {
+            box-shadow: 0 0 20px rgba(79, 209, 197, 0.8), 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #4a5568;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease;
+        }
+        .profile-pic:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+        .section-title {
+            color: #4fd1c5;
+            text-shadow: 0 0 5px rgba(79, 209, 197, 0.5);
+            font-weight: 700;
+        }
+        .experience-item {
+            background-color: #2d3748;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+        .experience-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            background-color: #3b4556;
+        }
+        .skill-badge {
+            background-color: #4a5568;
+            color: #cbd5e0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .skill-badge:hover {
+            background-color: #636b77;
+            transform: scale(1.1);
+        }
+        .company-experience-logo {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <div class="container py-8">
+        
+        <header class="header-bg p-8 mb-8 text-center flex flex-col items-center">
+            <div class="relative z-10">
+                <img src="https://github.com/gut-07/CV_Sebastian_Gutierrez/blob/main/profilepic.jpeg?raw=true" alt="Foto de perfil de Juan Sebastián" class="profile-pic mb-4">
+                <h1 class="text-4xl font-bold text-white mb-2">Juan Sebastián Gutiérrez Garay</h1>
+                <p class="text-xl text-gray-300">Comunicador Social-Periodista. Magíster (C) en Estudios Culturales</p>
+                <p class="text-lg text-gray-400">Estudiante de Tecnología en Desarrollo de Software</p>
+                <div class="flex justify-center gap-4 mt-4 text-gray-400">
+                    <span><i class="fas fa-envelope mr-2"></i>sgut.software@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2"></i>+57 310 860 3003</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="mb-8">
+            <h2 class="section-title text-2xl mb-4">Resumen Profesional</h2>
+            <p class="text-gray-300 bg-gray-800 p-6 rounded-lg shadow-md">
+                Estratega de comunicaciones con más de 15 años de experiencia en relacionamiento con medios de comunicación públicos y privados a nivel regional y nacional. Experto en posicionamiento de marca, mensajes clave y voceros a través de free press. Ha establecido alianzas estratégicas con gobiernos, grupos de interés, ONG, academia y cooperación internacional. Creador de tácticas de comunicación interna y externa en múltiples formatos (escrito, audio, video, web).
+            </p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="section-title text-2xl mb-4">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Comunicación Estratégica</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Relaciones Públicas</span>
+                        <span class="skill-badge">Medios de comunicación</span>
+                        <span class="skill-badge">Redes sociales</span>
+                        <span class="skill-badge">Email Marketing</span>
+                        <span class="skill-badge">Agencias de medios</span>
+                        <span class="skill-badge">Google Analytics & SEO</span>
+                        <span class="skill-badge">Planeación</span>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Habilidades Creativas</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Lenguajes de Programación</span>
+                        <span class="skill-badge">Fotografía</span>
+                        <span class="skill-badge">Video</span>
+                        <span class="skill-badge">Diseño editorial</span>
+                        <span class="skill-badge">Comunicación para el Desarrollo</span>
+                        <span class="skill-badge">Diseño de contenidos</span>
+
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Software</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Adobe Photoshop</span>
+                        <span class="skill-badge">Adobe Illustrator</span>
+                        <span class="skill-badge">Adobe Indesign</span>
+                        <span class="skill-badge">Adobe Premiere</span>
+                        <span class="skill-badge">Microsoft Office</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="section-title text-2xl mb-4">Experiencia Profesional</h2>
+            <div class="space-y-6">
+                <a href="https://pason.com/" target="_blank" class="block transition duration-300 ease-in-out transform hover:scale-105">
+                    <div class="experience-item flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16">
+                            <img src="https://github.com/gut-07/CV_Sebastian_Gutierrez/blob/main/logo%20pason.png?raw=true" alt="Logo de Pason Systems Corp." class="company-experience-logo rounded-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Especialista Senior en Gestión del Conocimiento</h3>
+                            <p class="text-gray-400 mb-1">Pason Systems Corp. | Febrero 2023 - Actualidad</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li>Gestión de proyectos con equipos de desarrollo para mantener actualizadas y depuradas las Interfaces de Usuario (UI) y Experiencia de Usuario (UX).</li>
+                                <li>Escritura, edición y mantenimiento de documentación técnica trilingüe (Inglés, Español y Portugués) de los productos de software y hardware de la compañía.</li>
+                                <li>Trabajo mediante sistema de ticketing de Jira para entregables y metodología ágil.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://canaltrece.com.co/" target="_blank" class="block transition duration-300 ease-in-out transform hover:scale-105">
+                    <div class="experience-item flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16">
+                            <img src="https://github.com/gut-07/CV_Sebastian_Gutierrez/blob/main/logotrece.png?raw=true" alt="Logo de Canal Trece" class="company-experience-logo rounded-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Profesional de Comunicaciones</h3>
+                            <p class="text-gray-400 mb-1">Canal Trece | enero 2021 – diciembre 2022</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li>Diseño y ejecución del Plan Estratégico de Comunicaciones.</li>
+                                <li>Responsable de la comunicación externa, Relaciones Públicas con gobiernos de 14 departamentos, medios de comunicación regionales y stakeholders.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.senalmemoria.co/" target="_blank" class="block transition duration-300 ease-in-out transform hover:scale-105">
+                    <div class="experience-item flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16">
+                            <img src="https://github.com/gut-07/CV_Sebastian_Gutierrez/blob/main/logo%20se%C3%B1al%20memoria.png?raw=true" alt="Logo de Señal Memoria" class="company-experience-logo rounded-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Editor y productor de contenido digital</h3>
+                            <p class="text-gray-400 mb-1">Señal Memoria - RTVC | Febrero 2017 - Diciembre 2017</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li>Posicionamiento de marca.</li>
+                                <li>Curaduría de contenido del archivo audiovisual de la televisión pública de Colombia.</li>
+                                <li>Publicación de contenido orgánico más exitoso en la historia de las cuentas de Señal Memoria en Facebook, Twitter e Instagram.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.canada.ca/" target="_blank" class="block transition duration-300 ease-in-out transform hover:scale-105">
+                    <div class="experience-item flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16">
+                            <img src="https://github.com/gut-07/CV_Sebastian_Gutierrez/blob/main/logocanada.png?raw=true" alt="Logo de Embajada de Canadá" class="company-experience-logo rounded-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Consejero de Comunicaciones</h3>
+                            <p class="text-gray-400 mb-1">Embajada de Canadá en Colombia | Febrero 2016 - Mayo 2016</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li>Aumento de seguidores en redes sociales gracias a la campaña digital #CanadáRespaldaPaz.</li>
+                                <li>Divulgación de resultados de programas locales de cooperación canadiense.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.worldvision.org/" target="_blank" class="block transition duration-300 ease-in-out transform hover:scale-105">
+                    <div class="experience-item flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16">
+                            <img src="https://github.com/gut-07/CV_Sebastian_Gutierrez/blob/main/logo%20world%20vison.jpeg?raw=true" alt="Logo de World Vision Colombia" class="company-experience-logo rounded-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Coordinador Gestión del Conocimiento</h3>
+                            <p class="text-gray-400 mb-1">World Vision Colombia | Junio 2015 - Julio 2016</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li>Establecimiento de alianzas con la Universidad de Los Andes y la Universidad Nacional de Colombia para proyectos de investigación.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.worldvision.org/" target="_blank" class="block transition duration-300 ease-in-out transform hover:scale-105">
+                    <div class="experience-item flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16">
+                            <img src="https://github.com/gut-07/CV_Sebastian_Gutierrez/blob/main/logo%20world%20vison.jpeg?raw=true" alt="Logo de World Vision Colombia" class="company-experience-logo rounded-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Especialista de Comunicaciones</h3>
+                            <p class="text-gray-400 mb-1">World Vision Colombia | Noviembre 2011 - Junio 2015</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li>Creación y puesta en marcha de estrategia de free press en regiones que posicionó la marca.</li>
+                                <li>Creación de red de comunicaciones con periodistas locales.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.wradio.com.co/" target="_blank" class="block transition duration-300 ease-in-out transform hover:scale-105">
+                    <div class="experience-item flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16">
+                            <img src="https://github.com/gut-07/CV_Sebastian_Gutierrez/blob/main/logo%20w%20radio.png?raw=true" alt="Logo de W Radio" class="company-experience-logo rounded-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Productor</h3>
+                            <p class="text-gray-400 mb-1">W Radio | Enero 2009 - Julio 2009</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li>Edición de informes radiales de corresponsales.</li>
+                                <li>Acuerdo de pauta con un cliente de alto perfil por USD $600.000.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div>
+                <h2 class="section-title text-2xl mb-4">Educación</h2>
+                <div class="space-y-4">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-white">Tecnología en Desarrollo de Software (C)</h3>
+                        <p class="text-gray-400">Universidad de San Buenaventura, 2025</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-white">Maestría en Estudios Culturales (C)</h3>
+                        <p class="text-gray-400">Universidad Nacional de Colombia, 2013</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-white">Comunicación Social - Periodismo</h3>
+                        <p class="text-gray-400">Universidad Externado de Colombia, 2009</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-white">Curso de Diseño Gráfico</h3>
+                        <p class="text-gray-400">Universidad Nacional de Colombia, 2016</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="section-title text-2xl mb-4">Idiomas</h2>
+                <div class="space-y-4">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <p class="font-semibold text-white">Español: <span class="font-normal text-gray-400">Nativo</span></p>
+                        <p class="font-semibold text-white">Inglés: <span class="font-normal text-gray-400">Avanzado</span></p>
+                        <p class="font-semibold text-white">Portugués: <span class="font-normal text-gray-400">Intermedio</span></p>
+                        <p class="font-semibold text-white">Francés: <span class="font-normal text-gray-400">Intermedio</span></p>
+                        <p class="font-semibold text-white">Alemán: <span class="font-normal text-gray-400">Básico</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title text-2xl mb-4">Reconocimientos</h2>
+            <p class="text-gray-300 bg-gray-800 p-6 rounded-lg shadow-md">
+                Matrícula de Honor (Beca) en 5 oportunidades, Universidad Externado de Colombia.
+            </p>
+        </section>
+
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
